@@ -20,23 +20,20 @@
 .page {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 21px;
     margin-bottom: 21px;
-    justify-content: center;
 }
 
 .text-block {
     height: 165px;
-    width: 100%;
-    margin: 0 22px 40px 22px;
+    width: 330px;
+    /* margin: 0 22px 40px 22px; */
+    margin: 20px;
     border: 5px black solid;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.text-block:last-of-type {
-    margin-bottom: 0;
 }
 
 .text-block p {
@@ -68,8 +65,9 @@
 }
 
 /* версия для устройств большей ширины чем горизонтальный iphone 12 pro */
-@media only screen and (min-width: 845) {
+@media only screen and (min-width: 391) {
     .text-block {
-        width: 50%;
+        height: 300px;
+        width: 600px;
     }
 }
